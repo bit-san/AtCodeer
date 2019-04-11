@@ -11,7 +11,8 @@ int main() {
 	//01234567 : s
 	
 	vector<int> a(n+1);
-
+	
+	//累積和を使う
 	for (int i = 1; i < n; i++) {
 		//ACACTACG
 		//01234567 : s

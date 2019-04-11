@@ -8,14 +8,15 @@ string s;
 int main() {
 	cin >> n >> q >> s;
 	//文字列は1~Nと数える
-	//ACACTACG => 1~8
-
-	vector<int> a(n+1);
-	//ACがある場所に何個目かを収納する
 	//ACACTACG
-	//-1-2--3-
-	//01234567 : aの配列の数え方
+	//01234567 : s
+	
+	vector<int> a(n+1);
+
 	for (int i = 1; i < n; i++) {
+		//-ACACTACG
+		//012345678: a
+		//--1-2--3-
 		a.at(i+1) = a.at(i);
 		if (s.at(i - 1) == 'A'&&s.at(i) == 'C') {
 			a.at(i + 1) += 1;

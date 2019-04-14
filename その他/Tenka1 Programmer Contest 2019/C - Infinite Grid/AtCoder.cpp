@@ -1,6 +1,8 @@
 ﻿#include "pch.h"
 #include "bits/stdc++.h"
 
+//部分点
+
 using namespace std;
 int main() {
 	int H, W;

@@ -23,6 +23,7 @@ int main() {
 		}
 	}
 	
+	/*
 	cout << endl;
 	for (int i = 0; i < H; i++) {
 		for (int j = W; j < 15 * W; j++) {
@@ -31,6 +32,7 @@ int main() {
 		cout << endl;
 	}
 	cout << endl;
+	*/
 	
 
 	//[#]の時 = 0 , [.]の時 = 1
@@ -55,12 +57,14 @@ int main() {
 		}
 	}
 
+	/*
 	for (int i = 1; i <= H; i++) {
 		for (int j = 1; j <= 15 * W; j++) {
 			cout << dp[i][j];
 		}
 		cout << endl;
 	}
+	*/
 
 	if (dp[H][15 * W] == 1) {
 		cout << "Yay!" << endl;
